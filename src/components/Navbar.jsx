@@ -8,11 +8,6 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
-  const toggleResume = () => {
-    const resumeUrl = "/personalWebsite/Resume.pdf";
-    window.open(resumeUrl);
-  };
-
   useEffect(() => {
     if (toggle) {
       setActive("");
@@ -50,7 +45,9 @@ const Navbar = () => {
           isSecondary ? "secondary" : "white"
         } hover:text-white text-[20px] font-medium cursor-pointer`}
       >
-        <button onClick={toggleResume}>Resume</button>
+        <a href="https://hcpinho123.github.io/personalWebsite/Resume.pdf">
+          Resume
+        </a>
       </li>
     </ul>
   );
