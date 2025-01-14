@@ -40,6 +40,9 @@ const Navbar = () => {
           <a href={`#${link.id}`}>{link.title}</a>
         </li>
       ))}
+      <li>
+        <a href={`public/Resume.pdf`}></a>
+      </li>
     </ul>
   );
 
