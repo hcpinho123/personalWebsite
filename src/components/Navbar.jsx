@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const toggleResume = () => {
     const resumeUrl =
-      "https://hcpinho123.github.io/personalWebsite/public/ Resume.pdf";
+      "https://hcpinho123.github.io/personalWebsite/public/Resume.pdf";
     window.open(resumeUrl);
   };
 
