@@ -45,9 +45,7 @@ const Navbar = () => {
           isSecondary ? "secondary" : "white"
         } hover:text-white text-[20px] font-medium cursor-pointer`}
       >
-        <a href="https://hcpinho123.github.io/personalWebsite/Resume.pdf">
-          Resume
-        </a>
+        <a href={`${process.env.PUBLIC_URL}/Resume.pdf`}>Resume</a>
       </li>
     </ul>
   );
