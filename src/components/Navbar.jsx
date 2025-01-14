@@ -9,8 +9,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = "/personalWebsite/Resume.pdf ";
-    window.open(resumeUrl);
+    // Get the base URL from the package.json homepage or default to ''
+    const baseUrl =
+      process.env.NODE_ENV === "production" ? "/personalWebsite" : "";
+
+    // Construct the full URL path
+    const resumeUrl = `${baseUrl}/Resume.pdf`;
+    window.open(resumeUrl, "_blank");
   };
 
   useEffect(() => {
