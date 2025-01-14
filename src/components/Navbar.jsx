@@ -41,7 +41,7 @@ const Navbar = () => {
         </li>
       ))}
       <li>
-        <a href={`Resume`}>Ola</a>
+        <a href={`Resume.pdf`}>Ola</a>
       </li>
     </ul>
   );
