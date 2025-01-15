@@ -40,9 +40,7 @@ const Navbar = () => {
           <a href={`#${link.id}`}>{link.title}</a>
         </li>
       ))}
-      <li
-        className={`${"text-white"} hover:text-white text-[20px] font-medium cursor-pointer`}
-      >
+      <li>
         <a href={`Resume.pdf`}>Resume</a>
       </li>
     </ul>
